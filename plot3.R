@@ -1,7 +1,12 @@
+###########################################################################
 ## plot3.R
-
+##
 ## Recreate the third plot, a set of 3 line graphs of Sub_metering
 ## plotted against weekday 
+##
+## Matthew Richards
+##
+###########################################################################
 
 ## Read in the data, which is delimited by ";" and has a header
 my_data <- read.table(unz("./exdata%2Fdata%2Fhousehold_power_consumption.zip","household_power_consumption.txt")

@@ -1,7 +1,12 @@
-## plot1.R
-
+###########################################################################
+## plot2.R
+##
 ## Recreate the first plot, a histogram of Frequency as a function of
 ## Global Active Power with color = red
+##
+## Matthew Richards
+##
+###########################################################################
 
 ## Read in the data, which is delimited by ";" and has a header
 my_data <- read.table(unz("./exdata%2Fdata%2Fhousehold_power_consumption.zip","household_power_consumption.txt")

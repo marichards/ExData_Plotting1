@@ -1,6 +1,11 @@
+###########################################################################
 ## plot4.R
-
+##
 ## Recreate the final plot, 4 graphs of various things against datetime 
+##
+## Matthew Richards
+##
+###########################################################################
 
 ## Read in the data, which is delimited by ";" and has a header
 my_data <- read.table(unz("./exdata%2Fdata%2Fhousehold_power_consumption.zip","household_power_consumption.txt")
@@ -47,7 +52,6 @@ legend("topright",legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3")
 with(two_day,plot(Global_active_power ~ datetime,type = "n",
 ylab = "Global_reactive_power"))
 with(two_day,lines(Global_active_power ~ datetime))
-
 
 ## Make sure to turn off the graphics device
 dev.off()
