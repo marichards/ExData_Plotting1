@@ -49,9 +49,9 @@ legend("topright",legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3")
 ,col =  c("black", "red", "blue"),lty = c(1,1,1))
 
 ## Create the fourth plot, which is Global reactive power v. datetime
-with(two_day,plot(Global_active_power ~ datetime,type = "n",
+with(two_day,plot(Global_reactive_power ~ datetime,type = "n",
 ylab = "Global_reactive_power"))
-with(two_day,lines(Global_active_power ~ datetime))
+with(two_day,lines(Global_reactive_power ~ datetime))
 
 ## Make sure to turn off the graphics device
 dev.off()
